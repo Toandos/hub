@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Toandos/hub/compare/v1.0.0...v1.0.1) (2026-08-17)
+
+
+### Bug Fixes
+
+* **cd:** Update to non-deprecated version of upload artifact action ([ae80d4b](https://github.com/Toandos/hub/commit/ae80d4b657f39bc5d7261ee4d3b0c067cbfaa1ea))
+
 ## 1.0.0 (2026-08-17)
 
 
