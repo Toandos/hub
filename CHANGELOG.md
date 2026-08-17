@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/Toandos/hub/compare/v1.0.1...v1.0.2) (2026-08-17)
+
+
+### Bug Fixes
+
+* **cd:** Run flutter in app folder ([cda2072](https://github.com/Toandos/hub/commit/cda2072de2edc904ba8ca1740eac0923acea6227))
+
 ## [1.0.1](https://github.com/Toandos/hub/compare/v1.0.0...v1.0.1) (2026-08-17)
 
 
