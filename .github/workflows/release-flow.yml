@@ -51,3 +51,14 @@ jobs:
     permissions:
       contents: read
       packages: write
+
+  publish-chart:
+    needs: release
+    if: needs.release.outputs.release_created == 'true'
+    uses: ./.github/workflows/publish-chart.yml
+    with:
+      tag_name: ${{ needs.release.outputs.tag_name }}
+      version: ${{ needs.release.outputs.version }}
+    permissions:
+      contents: read
+      packages: write
