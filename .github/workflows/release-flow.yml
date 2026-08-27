@@ -1,4 +1,4 @@
-name: Release
+name: Release flow
 
 on:
   push:
@@ -9,7 +9,13 @@ permissions:
   pull-requests: write
 
 jobs:
+  tests: 
+    uses: ./.github/workflows/tests.yml
+    permissions:
+      contents: read
+
   release:
+    needs: tests
     runs-on: ubuntu-latest
 
     outputs:
@@ -24,10 +30,21 @@ jobs:
         with:
           release-type: simple
 
-  publish:
+  publish-apk:
     needs: release
     if: needs.release.outputs.release_created == 'true'
-    uses: ./.github/workflows/publish.yml
+    uses: ./.github/workflows/publish-apk.yml
+    with:
+      tag_name: ${{ needs.release.outputs.tag_name }}
+      version: ${{ needs.release.outputs.version }}
+    permissions:
+      contents: read
+      packages: write
+
+  publish-web:
+    needs: release
+    if: needs.release.outputs.release_created == 'true'
+    uses: ./.github/workflows/publish-web.yml
     with:
       tag_name: ${{ needs.release.outputs.tag_name }}
       version: ${{ needs.release.outputs.version }}
