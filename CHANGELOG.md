@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/Toandos/hub/compare/v1.2.0...v1.2.1) (2026-08-27)
+
+
+### Bug Fixes
+
+* **chart:** Wrong service port ([7797c9e](https://github.com/Toandos/hub/commit/7797c9efa98e3c5aa1f46dc994172c993c0d67bb))
+
 ## [1.2.0](https://github.com/Toandos/hub/compare/v1.1.0...v1.2.0) (2026-08-27)
 
 
