@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Toandos/hub/compare/v1.1.0...v1.2.0) (2026-08-27)
+
+
+### Features
+
+* **cd:** Publish helm chart ([11a9003](https://github.com/Toandos/hub/commit/11a900318db984cac79c25c94541da674a0fc671))
+
 ## [1.1.0](https://github.com/Toandos/hub/compare/v1.0.2...v1.1.0) (2026-08-27)
 
 
