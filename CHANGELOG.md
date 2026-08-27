@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Toandos/hub/compare/v1.0.2...v1.1.0) (2026-08-27)
+
+
+### Features
+
+* **cd:** Publish webapp image ([5879ab0](https://github.com/Toandos/hub/commit/5879ab0ddfe85a769a3eae306b9caf02de653a8e))
+
 ## [1.0.2](https://github.com/Toandos/hub/compare/v1.0.1...v1.0.2) (2026-08-17)
 
 
