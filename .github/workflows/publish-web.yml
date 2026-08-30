@@ -40,7 +40,7 @@ jobs:
         run: flutter pub get
 
       - name: Build webapp
-        run: flutter build web --release
+        run: flutter build web --release --build-name ${{ inputs.version }}
 
       - name: Log in to GHCR
         uses: docker/login-action@v4
