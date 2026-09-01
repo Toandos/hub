@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/Toandos/hub/compare/v1.5.0...v1.6.0) (2026-09-01)
+
+
+### Features
+
+* **app:** Improve ui with material symbols ([a13fd99](https://github.com/Toandos/hub/commit/a13fd99f6fef9f3589b4b0af25bba55e1d4c5ff1))
+
+
+### Bug Fixes
+
+* **app:** Grid view missing item count ([df1c445](https://github.com/Toandos/hub/commit/df1c445bad7cbc5498dbfaa01076eda4b0ada184))
+
 ## [1.5.0](https://github.com/Toandos/hub/compare/v1.4.0...v1.5.0) (2026-09-01)
 
 
