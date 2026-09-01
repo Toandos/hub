@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/Toandos/hub/compare/v1.3.0...v1.4.0) (2026-09-01)
+
+
+### Features
+
+* **chart:** New hostname ([2d579b0](https://github.com/Toandos/hub/commit/2d579b085d10c20e203779387db448a097c8eff3))
+
 ## [1.3.0](https://github.com/Toandos/hub/compare/v1.2.2...v1.3.0) (2026-08-30)
 
 
