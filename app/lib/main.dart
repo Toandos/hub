@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hub/models/service.dart';
-import 'package:hub/pages/dashboard_page.dart';
+import 'package:hub/pages/hub_page.dart';
 
 void main() {
   runApp(const App());
@@ -16,8 +16,8 @@ class App extends StatelessWidget {
       theme: ThemeData.light(),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
-      home: const DashboardPage(services: [
-        Service(name: "hosting", url: "https://hosting.toando.de")
+      home: const HubPage(services: [
+        Service(name: "Hosting", url: "https://hosting.toando.de")
       ],),
     );
   }

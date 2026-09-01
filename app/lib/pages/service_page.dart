@@ -10,6 +10,9 @@ class ServicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(service.name),
+      ),
       body: InAppWebView(
         initialUrlRequest: URLRequest(
           url: WebUri(service.url),

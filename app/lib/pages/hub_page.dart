@@ -3,19 +3,22 @@ import 'package:flutter/material.dart';
 import 'service_page.dart';
 import '../models/service.dart';
 
-class DashboardPage extends StatefulWidget {
-  const DashboardPage({ super.key, required this.services });
+class HubPage extends StatefulWidget {
+  const HubPage({ super.key, required this.services });
 
   final List<Service> services;
 
   @override
-  State<DashboardPage> createState() => _DashboardPageState();
+  State<HubPage> createState() => _HubPageState();
 }
 
-class _DashboardPageState extends State<DashboardPage> {
+class _HubPageState extends State<HubPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Hub"),
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: .center,
