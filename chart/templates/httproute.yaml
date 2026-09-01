@@ -1,6 +1,25 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
+  name: hub-redirect
+spec:
+  parentRefs:
+    - name: public-gateway
+      namespace: networking
+
+  hostnames:
+    - "toando.de"
+
+  rules:
+    - filters:
+        - type: RequestRedirect
+          requestRedirect:
+            hostname: "www.toando.de"
+            statusCode: 301
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata:
   name: hub-webapp
 spec:
   parentRefs:
@@ -8,7 +27,7 @@ spec:
       namespace: networking
 
   hostnames:
-    - hub.toando.de
+    - www.toando.de
 
   rules:
     - backendRefs:
