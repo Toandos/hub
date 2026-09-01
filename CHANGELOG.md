@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Toandos/hub/compare/v1.4.0...v1.5.0) (2026-09-01)
+
+
+### Features
+
+* **app:** Improve ui ([665afa4](https://github.com/Toandos/hub/commit/665afa44cacbc662a229cb54b60fdc48dfe21727))
+
 ## [1.4.0](https://github.com/Toandos/hub/compare/v1.3.0...v1.4.0) (2026-09-01)
 
 
