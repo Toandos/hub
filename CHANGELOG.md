@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.6.1](https://github.com/Toandos/hub/compare/v1.6.0...v1.6.1) (2026-09-01)
+
+
+### Bug Fixes
+
+* **app:** Broken ui ([d280584](https://github.com/Toandos/hub/commit/d280584a10c788b72d016ca292d43e0d98fe3b39))
+* **app:** Ui tile overflow ([ef658ed](https://github.com/Toandos/hub/commit/ef658ed013b2778cbc770dab2fd814c1ae323a54))
+* **app:** Ui tile overflow ([d7433a6](https://github.com/Toandos/hub/commit/d7433a67a04fd436b157c9dbcacd167c678dc5c8))
+
 ## [1.6.0](https://github.com/Toandos/hub/compare/v1.5.0...v1.6.0) (2026-09-01)
 
 
