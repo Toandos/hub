@@ -26,6 +26,7 @@ class _HubPageState extends State<HubPage> {
             mainAxisSpacing: 16,
             crossAxisSpacing: 16
           ),
+          itemCount: widget.services.length,
           itemBuilder: (context, index) {
             final service = widget.services[index];
 
