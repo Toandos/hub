@@ -23,6 +23,7 @@ class _HubPageState extends State<HubPage> {
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 120,
+            mainAxisExtent: 120,
             mainAxisSpacing: 16,
             crossAxisSpacing: 16
           ),
