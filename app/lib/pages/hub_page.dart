@@ -22,8 +22,8 @@ class _HubPageState extends State<HubPage> {
       body: Center(
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 120,
-            mainAxisExtent: 120,
+            maxCrossAxisExtent: 140,
+            mainAxisExtent: 140,
             mainAxisSpacing: 16,
             crossAxisSpacing: 16
           ),
@@ -43,8 +43,9 @@ class _HubPageState extends State<HubPage> {
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(service.symbol, size: 50),
+                  Icon(service.symbol, size: 48),
                   Text(service.name)
                 ]
               )
