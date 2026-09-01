@@ -22,7 +22,7 @@ class _HubPageState extends State<HubPage> {
       body: Center(
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 180,
+            maxCrossAxisExtent: 120,
             mainAxisSpacing: 16,
             crossAxisSpacing: 16
           ),
@@ -30,13 +30,20 @@ class _HubPageState extends State<HubPage> {
           itemBuilder: (context, index) {
             final service = widget.services[index];
 
-            return ElevatedButton(
+            return FilledButton.tonal(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => ServicePage(service: service)));
               },
+              style: FilledButton.styleFrom(
+                padding: const EdgeInsets.all(16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16)
+                )
+              ),
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(service.symbol),
+                  Icon(service.symbol, size: 50),
                   Text(service.name)
                 ]
               )
