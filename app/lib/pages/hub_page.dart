@@ -20,17 +20,27 @@ class _HubPageState extends State<HubPage> {
         title: const Text("Hub"),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: .center,
-          children: [
-              for(final service in widget.services)
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => ServicePage(service: service)));
-                  },
-                  child: Text(service.name)
-                )
-          ],
+        child: GridView.builder(
+          gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+            maxCrossAxisExtent: 180,
+            mainAxisSpacing: 16,
+            crossAxisSpacing: 16
+          ),
+          itemBuilder: (context, index) {
+            final service = widget.services[index];
+
+            return ElevatedButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ServicePage(service: service)));
+              },
+              child: Column(
+                children: [
+                  Icon(service.symbol),
+                  Text(service.name)
+                ]
+              )
+            );
+          },
         ),
       ),
     );

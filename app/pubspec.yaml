@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
+  material_symbols_icons: ^4.2870.0
   flutter_inappwebview: 6.1.5
 
 dev_dependencies:

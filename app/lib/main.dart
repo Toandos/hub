@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_symbols_icons/symbols.dart';
 import 'package:hub/models/service.dart';
 import 'package:hub/pages/hub_page.dart';
 
@@ -17,8 +18,17 @@ class App extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.system,
       home: const HubPage(services: [
-        Service(name: "Hosting", url: "https://hosting.toando.de")
-      ],),
+        Service(
+          name: "Hosting",
+          symbol: Symbols.host,
+          url: "https://hosting.toando.de"
+        ),
+        Service(
+          name: "Books",
+          symbol: Symbols.book_2,
+          url: "https://books.toando.de"
+        )
+      ]),
     );
   }
 }
