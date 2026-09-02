@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hub/layout/header.dart';
 
 import 'service_page.dart';
 import '../models/service.dart';
@@ -16,9 +17,7 @@ class _HubPageState extends State<HubPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Hub"),
-      ),
+      appBar: Header(title: "Hub"),
       body: Center(
         child: GridView.builder(
           gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
