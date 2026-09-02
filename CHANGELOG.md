@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/Toandos/hub/compare/v1.6.1...v1.7.0) (2026-09-02)
+
+
+### Features
+
+* **app:** Add account button to header ([e37db2d](https://github.com/Toandos/hub/commit/e37db2d31fbdd9a09f947d280229bdebc109170a))
+
 ## [1.6.1](https://github.com/Toandos/hub/compare/v1.6.0...v1.6.1) (2026-09-01)
 
 
